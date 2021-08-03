@@ -43,25 +43,18 @@ def get_model(max_len_en, max_len_pr, nwords, emb_dim):
     enhancer_trf = transformer1(enhancer_max_pool_layer)
     promoter_trf = transformer2(promoter_max_pool_layer)
 
-    # enhancer_avgpool = GlobalAveragePooling1D()(enhancer_trf)
-    # promoter_avgpool = GlobalAveragePooling1D()(promoter_trf)
-
     enhancer_maxpool = GlobalMaxPooling1D()(enhancer_trf)
     promoter_maxpool = GlobalMaxPooling1D()(promoter_trf)
-
-    # enhancer_pool = tf.concat([enhancer_avgpool, enhancer_maxpool], -1)
-    # promoter_pool = tf.concat([promoter_avgpool, promoter_maxpool], -1)
 
     # merge
     merge = tf.concat([enhancer_maxpool * promoter_maxpool,
                        tf.abs(enhancer_maxpool - promoter_maxpool),
                        ], -1)
-    #my
-    # bn=BatchNormalization()(merge)
-    # dt=Dropout(0.5)(merge)
+
+
 
     merge2 = Dense(50, activation='relu')(merge)
-#    merge3 = Dense(20, activation='relu')(merge2)
+
 
 
     preds = Dense(1, activation='sigmoid')(merge2)
