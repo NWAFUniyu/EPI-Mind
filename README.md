@@ -1,10 +1,11 @@
 # EPI-Mind
 EPI-Mind
 # EPI-Mind(Identifying Enhancer-Promoter Interactions Based on Transformer Mechanism)
-EPI-Mind is a novel method which can predict EPIs only with genomic sequence. The main contribution of this work are as follows:
-i) We outlined an effective deep-learning model for EPIs prediction, outperforming the pioneer for the use case of genomic sequence data.
-ii) Our model narrows the range when selecting proper EPI-pairs.
-iii) We also provided a general model which can predict EPIs in all six cell-lines.
+EPI-Mind is a novel method which can predict EPIs only with genomic sequence. 
+The main contribution of this work are as follows:
+ i) We outlined an effective deep-learning model for EPIs prediction, outperforming the pioneer for the use case of genomic sequence data.
+ ii) Our model narrows the range when selecting proper EPI-pairs.
+ iii) We also provided a general model which can predict EPIs in all six cell-lines.
 
 # File Description 
 /src/data/Data_Augmentation.R
