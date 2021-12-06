@@ -1,5 +1,3 @@
-# EPI-Mind
-EPI-Mind
 # EPI-Mind(Identifying Enhancer-Promoter Interactions Based on Transformer Mechanism)
 EPI-Mind is a novel method which can predict EPIs only with genomic sequence. 
 
