@@ -32,14 +32,6 @@ Evaluate the performance of model.
  /src/model
 
 The model of EPI-MIND
-
-Directory
-
- /src/model/genModel/ the weight of EPIVAN-general.
-
- /src/model/retrainModel/ the weight of EPIVAN-best on each cell line.
-
- /src/model/speModel/ the weight of EPIVAN-specific on each cell line.
  
 References:
 
