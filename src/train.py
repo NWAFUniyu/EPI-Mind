@@ -1,5 +1,5 @@
 # --------------------------------------------------------------------
-# To compare with pioneers, we quoted the train procedure from EPIVAN
+# To compare with pioneers, we quoted some of the train procedure from EPIVAN
 # --------------------------------------------------------------------
 from models import get_model
 import numpy as np
