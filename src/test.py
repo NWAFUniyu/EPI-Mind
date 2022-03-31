@@ -1,5 +1,5 @@
 # --------------------------------------------------------------------
-# To compare with pioneers, we quoted the test procedure from EPIVAN
+# To compare with pioneers, we quoted some of the test procedure from EPIVAN
 # --------------------------------------------------------------------
 import os
 from models import get_model
